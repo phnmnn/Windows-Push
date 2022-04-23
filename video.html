@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<script src="canvas.js"></script>
+	<title>PHNMNN</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+
+<canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;">
+
+
+</canvas>
+
+<script>
+	
+//	canvas.shadowOffsetX= 4 ;
+//	canvas.shadowOffsetY= 4 ;
+//	canvas.shadowBlur = 6;
+//	canvas.shadowColor = 'rgba(0,0,200,.5)';
+
+
+//   function do First(){
+
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	
+	window.addEventListener("mousemove",bucky,false);
+	
+//	}
+
+	function bucky(e){
+//		ctx.clearRect(0,0,600,400);
+		var xPos = e.clientX;
+		var yPos = e.clientY;
+		ctx.fillRect(xPos-5, yPos-5,10,10);
+
+	}
+
+//	window.addEventListener("load",doFirst, false);
+	
+	
+</script>
+
+
+
+
+</body>
+
+	
+	
+
+
+
+
+
+
+</html>
